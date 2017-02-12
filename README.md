@@ -20,13 +20,13 @@ $ yarn global add stage-cli
 ### Usage
 
 ``` bash
-$ vue init <template-name> <project-name>
+$ stage init <template-name> <project-name>
 ```
 
 __Example:__
 
 ``` bash
-$ vue init simple my-project
+$ stage init simple my-project
 ```
 
 The above command pulls the template from [stage-templates/simple](https://github.com/stage-templates), prompts for some information, and generates the project at ./my-project/.
@@ -39,7 +39,7 @@ The purpose of official templates are to provide opinionated, batteries-included
 
 The official templates are derived from project types that I personally have used with various frequency using build tools that I prefer.  I'm open to alternative contributions for templates. Ultimately, this is a really slick way to setup scaffolding without cloning a boilerplate repo, removing the .git directory and making a lot of additional changes to the boilerplate to personalize it for you're specific project.  
 
-All official project templates are repos in the [stage-templates organization](https://github.com/stage-templates). When a new template is added to the organization, you will be able to run `vue init <template-name> <project-name>` to use that template. You can also run `stage list` to see all available official templates.
+All official project templates are repos in the [stage-templates organization](https://github.com/stage-templates). When a new template is added to the organization, you will be able to run `stage init <template-name> <project-name>` to use that template. You can also run `stage list` to see all available official templates.
 
 See the [organization page](https://github.com/stage-templates) for all available templates.
 
@@ -250,7 +250,7 @@ stage init 'simple#1.0' mynewproject
 
 _Note_: The surrounding quotes are necessary on zsh shells because of the special meaning of the `#` character.
 
-### Thanks 
+### Thanks
 
 Thanks to Evan You and Vue.js for creating another awesome tool in [vue-cli](https://github.com/vuejs/vue-cli) which made this project possible.
 
