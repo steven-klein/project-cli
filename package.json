@@ -4,10 +4,10 @@
   "description": "A simple CLI for scaffolding various project types. Forked from vue-cli.",
   "preferGlobal": true,
   "bin": {
-    "vue": "bin/stage",
-    "vue-init": "bin/stage-init",
-    "vue-list": "bin/stage-list",
-    "vue-build": "bin/stage-build"
+    "stage": "bin/stage",
+    "stage-init": "bin/stage-init",
+    "stage-list": "bin/stage-list",
+    "stage-build": "bin/stage-build"
   },
   "repository": {
     "type": "git",
