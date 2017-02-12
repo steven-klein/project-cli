@@ -57,8 +57,7 @@ The shorthand repo notation is passed to [download-git-repo](https://github.com/
 
 If you would like to download from a private repository use the `--clone` flag and the cli will use `git clone` so your SSH keys are used.
 
-You can use the current vuejs-templates like this.  
-_*Note: you'll likely receive a message that "A newer version of vue-cli is available." since those templates assume you are using vue-cli,and the version number between stage-cli and vue-cli will not match._
+You can use the current vuejs-templates like this.
 
 ``` bash
 stage init vuejs-templates/webpack
