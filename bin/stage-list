@@ -18,9 +18,9 @@ process.on('exit', function () {
  */
 
 request({
-  url: 'https://api.github.com/users/vuejs-templates/repos',
+  url: 'https://api.github.com/users/stage-templates/repos',
   headers: {
-    'User-Agent': 'vue-cli'
+    'User-Agent': 'stage-cli'
   }
 }, function (err, res, body) {
   if (err) logger.fatal(err)
