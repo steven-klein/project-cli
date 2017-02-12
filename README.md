@@ -28,10 +28,10 @@ $ stage init <template-name> <project-name>
 __Example:__
 
 ``` bash
-$ stage init simple my-project
+$ stage init html-simple my-project
 ```
 
-The above command pulls the template from [stage-templates/simple](https://github.com/stage-templates), prompts for some information, and generates the project at ./my-project/.
+The above command pulls the template from [stage-templates/html-simple](https://github.com/stage-templates), prompts for some information, and generates the project at ./my-project/.
 
 ### Official Templates
 
@@ -243,7 +243,7 @@ stage init '<template-name>#<branch-name>' <project-name>
 
 Example:
 
-Installing the [`1.0` branch](https://github.com/stage-templates/simple/tree/1.0) of the simple stage template:
+Installing the [`1.0` branch](https://github.com/stage-templates/html-simple/tree/1.0) of the simple stage template:
 
 ```
 stage init 'simple#1.0' mynewproject
