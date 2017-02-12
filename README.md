@@ -1,5 +1,7 @@
 # stage-cli
 
+[![Build status](https://ci.appveyor.com/api/projects/status/fdpgio27ygo9aoko/branch/master?svg=true)](https://ci.appveyor.com/project/steven-klein/stage-cli/branch/master)
+
 A simple CLI for scaffolding various projects.  Forked from [vue-cli](https://github.com/vuejs/vue-cli) and using an alternative default [templates repo](https://github.com/stage-templates).
 
 ### Installation
