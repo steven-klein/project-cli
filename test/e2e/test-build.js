@@ -5,7 +5,7 @@ const fs = require('fs')
 const rm = require('rimraf').sync
 
 describe('command:build', () => {
-  const cli = path.join(__dirname, '../../bin/vue-build')
+  const cli = path.join(__dirname, '../../bin/stage-build')
   let originalCwd = process.cwd()
 
   function setup () {
