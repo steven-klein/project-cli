@@ -114,19 +114,23 @@ function run () {
       if (!hasSlash) {
         // use official templates
         var officialTemplate = 'stage-templates/' + template
-        if (template.indexOf('#') !== -1) {
-          downloadAndGenerate(officialTemplate)
-        } else {
-          if (template.indexOf('-2.0') !== -1) {
-            warnings.v2SuffixTemplatesDeprecated(template, inPlace ? '' : name)
-            return
-          }
-
-          warnings.v2BranchIsNowDefault(template, inPlace ? '' : name)
-          downloadAndGenerate(officialTemplate)
-        }
+        downloadAndGenerate(officialTemplate)
       } else {
-        downloadAndGenerate(template)
+        // maintain vuejs-cli vue version warnings
+        if (template.indexOf('vuejs-templates/') !== -1) {
+          if (template.indexOf('#') !== -1) {
+            downloadAndGenerate(template)
+          } else {
+            if (template.indexOf('-2.0') !== -1) {
+              warnings.v2SuffixTemplatesDeprecated(template, inPlace ? '' : name)
+              return
+            }
+            warnings.v2BranchIsNowDefault(template, inPlace ? '' : name)
+            downloadAndGenerate(template)
+          }
+        } else {
+          downloadAndGenerate(template)
+        }
       }
     })
   }
