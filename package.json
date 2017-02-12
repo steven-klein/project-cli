@@ -1,6 +1,6 @@
 {
   "name": "stage-cli",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "A simple CLI for scaffolding various project types. Forked from vue-cli and using an alternative default templates repo.",
   "preferGlobal": true,
   "bin": {
