@@ -57,12 +57,22 @@ Where `username/repo` is the GitHub repo shorthand for your fork.
 
 The shorthand repo notation is passed to [download-git-repo](https://github.com/flipxfx/download-git-repo) so you can also use things like `bitbucket:username/repo` for a Bitbucket repo and `username/repo#branch` for tags or branches.
 
-If you would like to download from a private repository use the `--clone` flag and the cli will use `git clone` so your SSH keys are used.
-
 You can use the current vuejs-templates like this.
 
 ``` bash
-stage init vuejs-templates/webpack
+stage init vuejs-templates/webpack my-project
+```
+
+### Private Repo's
+
+If you would like to download from a private repository use the `--clone` flag and the cli will use `git clone` so your SSH keys are used.
+
+You are responsible for making sure your SSH keys are setup correctly.
+
+Additionally, avoid using the shorthand notation for private repo's use something like this instead:
+
+```
+stage init bitbucket.org:username/repo --clone my-project
 ```
 
 ### Local Templates
@@ -82,7 +92,7 @@ stage init ~/fs/path/to-custom-template my-project
   - `prompts`: used to collect user options data;
 
   - `filters`: used to conditional filter files to render.
-  
+
   - `metalsmith`: used to add custom metalsmith plugins in the chain.
 
   - `completeMessage`: the message to be displayed to the user when the template has been generated. You can include custom instruction here.
@@ -199,7 +209,7 @@ You may customize the metalsmith builder created by vue-cli to register custom p
       // Implement something really custom here.
       done(null, files)
     }
-    
+
     metalsmith.use(customMetalsmithPlugin)
   }
 }
